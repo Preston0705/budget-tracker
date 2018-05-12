@@ -47,7 +47,7 @@ class Summary extends React.Component {
             <div className="row justify-content-center">
               <div className="col-6 text-center">
                 <h6 className="h6 strong">Left after spending</h6>
-                <p>{difference}</p>
+                <p>{differenceformatCurrency(difference)}</p>
               </div>
             </div>
           </div>
