@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "npm run less && webpack",
-    "start": "node server/budgetserver.js",
+    "start": "npm run less && webpack && node server/budgetserver.js",
     "less": "lessc src/css/style.less dist/css/style.css",
     "lint": "eslint .",
     "test": "npm run build && mocha test/.setup.js test/*.spec.js"
